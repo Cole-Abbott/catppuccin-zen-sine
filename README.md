@@ -43,6 +43,7 @@ Tested in a separate headless Zen **1.23.4b** profile with Sine **2.3.4.1c**:
 
 - All **56** flavor/accent combinations returned their expected upstream accent color in browser chrome.
 - All **56** returned their expected upstream accent color on `about:preferences`.
+- A fresh install from the public GitHub URL through Sine downloaded both stylesheets, enabled automatic updates, and applied the expected accent.
 - The local installer registered the mod; Sine displayed both preference controls.
 - Selecting Macchiato/Teal through Sine's controls updated the browser color.
 - Unset preferences selected automatic appearance and Mauve.
