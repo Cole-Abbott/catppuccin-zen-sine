@@ -3,12 +3,21 @@
   "name": "Catppuccin",
   "description": "Unofficial Sine port of Catppuccin for Zen, with four flavors and fourteen accents.",
   "author": "Catppuccin contributors; Sine packaging adapted locally",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/Cole-Abbott/catppuccin-zen-sine",
-  "style": {"chrome": "userChrome.css", "content": "userContent.css"},
+  "style": {
+    "chrome": "userChrome.css",
+    "content": "userContent.css"
+  },
   "preferences": "preferences.json",
-  "tags": ["catppuccin", "theme", "pastel"],
-  "fork": ["zen"],
+  "tags": [
+    "catppuccin",
+    "theme",
+    "pastel"
+  ],
+  "fork": [
+    "zen"
+  ],
   "createdAt": "2026-10-22",
-  "updatedAt": "2026-10-22"
+  "updatedAt": "2026-10-22T18:20:50Z"
 }

@@ -8,6 +8,86 @@ import re
 ROOT = Path(__file__).resolve().parent
 FLAVORS = ['Latte', 'Frappe', 'Macchiato', 'Mocha']
 ACCENTS = sorted(p.name for p in (ROOT / 'vendor/themes/Mocha').iterdir())
+PALETTES = {
+    'Latte': ('#eff1f5', '#e6e9ef', '#ccd0da', '#bcc0cc', '#4c4f69', '#6c6f85'),
+    'Frappe': ('#303446', '#292c3c', '#414559', '#51576d', '#c6d0f5', '#a5adce'),
+    'Macchiato': ('#24273a', '#1e2030', '#363a4f', '#494d64', '#cad3f5', '#a5adcb'),
+    'Mocha': ('#1e1e2e', '#181825', '#313244', '#45475a', '#cdd6f4', '#a6adc8'),
+}
+
+def settings_compat(flavor):
+    base, mantle, surface0, surface1, text, subtext = PALETTES[flavor]
+    # Use modern design tokens. In particular, never reset button backgrounds:
+    # background shorthand removes Sine SVGs and affects navigation shadow DOM.
+    values = {
+        '--ctp-base': base, '--ctp-mantle': mantle,
+        '--ctp-surface0': surface0, '--ctp-surface1': surface1,
+        '--text-color': text, '--text-color-deemphasized': subtext,
+        '--background-color-canvas': base, '--background-color-box': mantle,
+        '--card-background-color': mantle,
+        '--zen-main-browser-background': base,
+        '--zen-in-content-dialog-background': mantle,
+        '--zen-dialog-background': mantle,
+        '--button-background-color': surface0,
+        '--button-background-color-hover': surface1,
+        '--button-background-color-active': surface1,
+        '--button-text-color': text,
+        '--button-text-color-hover': text, '--button-text-color-active': text,
+        '--button-background-color-primary': 'var(--color-accent-primary)',
+        '--button-text-color-primary': base,
+        '--button-text-color-primary-hover': base,
+        '--button-text-color-primary-active': base,
+        '--border-color': surface1, '--border-color-deemphasized': surface1,
+        '--card-border-color': surface1,
+        '--input-background-color': mantle, '--input-color': text,
+        'color-scheme': 'light' if flavor == 'Latte' else 'dark',
+    }
+    declarations = '\n'.join(f'      {k}: {v} !important;' for k, v in values.items())
+    return '''
+  /* Compatibility with Zen's redesigned settings and Sine icon buttons. */
+  @-moz-document url-prefix("about:preferences") {
+    :root {
+''' + declarations + '''
+    }
+    .main-content, .pane-container, #search-container {
+      background-color: var(--ctp-base) !important;
+    }
+    .navigation {
+      background-color: var(--ctp-mantle) !important;
+    }
+    #sineInstallationGroup, #sineInstalledGroup {
+      background-color: transparent !important;
+    }
+    .sineInstallationItem, .sineItem, dialog {
+      background-color: var(--ctp-mantle) !important;
+      color: var(--text-color) !important;
+      border-color: var(--ctp-surface1) !important;
+    }
+    #sineInstallationGroup button, #sineInstalledGroup button,
+    .sineItemPreferenceDialogContent menulist {
+      background-color: var(--ctp-surface0) !important;
+      color: var(--text-color) !important;
+      -moz-context-properties: fill, stroke, fill-opacity;
+      fill: currentColor;
+      stroke: currentColor;
+      fill-opacity: 1;
+    }
+    #sineInstallationGroup button:hover, #sineInstalledGroup button:hover {
+      background-color: var(--ctp-surface1) !important;
+    }
+    #sineInstalledGroup .auto-update-toggle[enabled] {
+      background-color: var(--color-accent-primary) !important;
+      color: var(--ctp-base) !important;
+    }
+    #sineInstalledGroup .auto-update-toggle[enabled]::before {
+      filter: none !important;
+    }
+    .separator-label {
+      background-color: var(--ctp-mantle) !important;
+      color: var(--text-color-deemphasized) !important;
+    }
+  }
+'''
 
 def selected(prop, value, choices, default):
     if value != default:
@@ -35,10 +115,20 @@ def build():
                 source, count = re.subn(pattern, f'@media ({flavor_query}) and {accent_query} {{', source, count=1)
                 assert count == 1, (flavor, accent, name)
                 if name == 'userContent.css':
+                    # The upstream universal button rule also crosses component
+                    # boundaries into modern settings navigation.
+                    source, count = re.subn(r'    button,\s*groupbox menulist\s*\{[^}]*\}', '', source)
+                    assert count == 1, (flavor, accent, 'button reset')
+                    source, count = re.subn(r'    groupbox\s*,\s*moz-card\s*\{[^}]*\}', '', source)
+                    assert count == 1, (flavor, accent, 'card reset')
+                    source, count = re.subn(r'    \.main-content\s*\{[^}]*\}', '', source)
+                    assert count == 1, (flavor, accent, 'canvas reset')
                     logo = next(folder.glob('*.svg'))
                     uri = 'data:image/svg+xml;base64,' + base64.b64encode(logo.read_bytes()).decode()
                     source, count = re.subn(r'url\("zen-logo-[^"]+"\),\s*url\("https://[^\"]+"\)', f'url("{uri}")', source)
                     assert count == 1, (flavor, accent)
+                    prefix, closing = source.rsplit('}', 1)
+                    source = prefix + settings_compat(flavor) + '}' + closing
                 blocks.append(source + '\n')
     for name, blocks in styles.items():
         (ROOT / name).write_text('\n'.join(blocks))
@@ -46,7 +136,7 @@ def build():
         'repository': 'https://github.com/catppuccin/zen-browser',
         'commit': 'c855685442c6040c4dda9c8d3ddc7b708de1cbaa',
         'license': 'MIT', 'source_sha256': hashes,
-        'changes': ['Replace outer appearance media queries with Sine flavor/accent preferences.', 'Embed the matching upstream SVG; remove the remote logo fallback.'],
+        'changes': ['Replace outer appearance media queries with Sine flavor/accent preferences.', 'Embed the matching upstream SVG; remove the remote logo fallback.', 'Replace legacy settings button/card/canvas overrides with modern design tokens and scoped Sine styles, preserving native icon backgrounds and navigation states.'],
     }, indent=2) + '\n')
     preferences = [
         {'type': 'dropdown', 'property': 'catppuccin.sine.flavor', 'label': 'Flavor', 'defaultValue': 'auto', 'placeholder': False,

@@ -35,7 +35,11 @@ Offline installations disable update checks. To switch to normal repository upda
 
 Upstream commit: `c855685442c6040c4dda9c8d3ddc7b708de1cbaa`.
 
-The unmodified upstream theme files are frozen in `vendor/themes/`, with SHA-256 hashes in `PROVENANCE.json`. Run `python3 build.py` to regenerate the styles and preference schema. The generator replaces each theme's outer appearance condition with flavor/accent preference conditions and embeds the matching SVG instead of fetching a remote fallback. Colors, selectors, and nested styling come from upstream. The MIT license and original attribution are preserved. This is an independent adaptation, not an official Catppuccin release.
+The unmodified upstream theme files are frozen in `vendor/themes/`, with SHA-256 hashes in `PROVENANCE.json`. Run `python3 build.py` to regenerate the styles and preference schema. The generator replaces each theme's outer appearance condition with flavor/accent preference conditions and embeds the matching SVG instead of fetching a remote fallback. Colors and the browser styling come from upstream. Version 1.0.1 replaces the legacy universal settings button/card/canvas overrides with modern design tokens and scoped Sine rules. This preserves icon background images and native sidebar selected/hover states, aligns the canvas and search header, and sets the appropriate light/dark color scheme for settings controls. The MIT license and original attribution are preserved. This is an independent adaptation, not an official Catppuccin release.
+
+## Version 1.0.1
+
+Fixes missing Sine action icons, permanently highlighted settings navigation, mismatched search/page backgrounds, and update-icon contrast. Use Sine’s update control, then reload Settings.
 
 ## Validation
 
@@ -48,5 +52,7 @@ Tested in a separate headless Zen **1.23.4b** profile with Sine **2.3.4.1c**:
 - Selecting Macchiato/Teal through Sine's controls updated the browser color.
 - Unset preferences selected automatic appearance and Mauve.
 - Disabling the mod through Sine restored the browser's prior accent color.
+
+Version 1.0.1 additionally checks all 56 combinations for intact gear/home icon images, transparent unselected navigation, a distinct selected item, matching search and page backgrounds, the flavor-appropriate native color scheme, and an uninverted update icon. Mocha and Latte were also visually inspected.
 
 `VALIDATION.json` records these results. This checks native style application and Sine integration; it is not a full visual audit of every Zen surface or a guarantee of compatibility with other themes.

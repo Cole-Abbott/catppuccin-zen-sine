@@ -438,5 +438,404 @@
     "chromeExists": true,
     "contentExists": true,
     "chrome_accent_after_repository_install": "#cba6f7"
+  },
+  "settings_regressions_v1_0_1": {
+    "version": "1.0.1",
+    "browser": "Zen 1.23.4b",
+    "sine": "2.3.4.1c",
+    "checks": [
+      {
+        "flavor": "Latte",
+        "accent": "Blue",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Latte",
+        "accent": "Flamingo",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Latte",
+        "accent": "Green",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Latte",
+        "accent": "Lavender",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Latte",
+        "accent": "Maroon",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Latte",
+        "accent": "Mauve",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Latte",
+        "accent": "Peach",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Latte",
+        "accent": "Pink",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Latte",
+        "accent": "Red",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Latte",
+        "accent": "Rosewater",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Latte",
+        "accent": "Sapphire",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Latte",
+        "accent": "Sky",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Latte",
+        "accent": "Teal",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Latte",
+        "accent": "Yellow",
+        "canvas": "rgb(239, 241, 245)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Blue",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Flamingo",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Green",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Lavender",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Maroon",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Mauve",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Peach",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Pink",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Red",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Rosewater",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Sapphire",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Sky",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Teal",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Frappe",
+        "accent": "Yellow",
+        "canvas": "rgb(48, 52, 70)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Blue",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Flamingo",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Green",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Lavender",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Maroon",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Mauve",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Peach",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Pink",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Red",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Rosewater",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Sapphire",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Sky",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Teal",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Macchiato",
+        "accent": "Yellow",
+        "canvas": "rgb(36, 39, 58)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Blue",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Flamingo",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Green",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Lavender",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Maroon",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Mauve",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Peach",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Pink",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Red",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Rosewater",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Sapphire",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Sky",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Teal",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      },
+      {
+        "flavor": "Mocha",
+        "accent": "Yellow",
+        "canvas": "rgb(30, 30, 46)",
+        "icons_preserved": true,
+        "navigation_states_preserved": true
+      }
+    ]
   }
 }
