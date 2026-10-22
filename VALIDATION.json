@@ -1,0 +1,412 @@
+{
+  "browser": "Zen 1.23.4b",
+  "mode": "isolated headless profile, native Gecko user stylesheets",
+  "results": [
+    {
+      "flavor": "Latte",
+      "accent": "Blue",
+      "chrome_accent": "#1e66f5",
+      "passed": true,
+      "content_accent": "#1e66f5"
+    },
+    {
+      "flavor": "Latte",
+      "accent": "Flamingo",
+      "chrome_accent": "#dd7878",
+      "passed": true,
+      "content_accent": "#dd7878"
+    },
+    {
+      "flavor": "Latte",
+      "accent": "Green",
+      "chrome_accent": "#40a02b",
+      "passed": true,
+      "content_accent": "#40a02b"
+    },
+    {
+      "flavor": "Latte",
+      "accent": "Lavender",
+      "chrome_accent": "#7287fd",
+      "passed": true,
+      "content_accent": "#7287fd"
+    },
+    {
+      "flavor": "Latte",
+      "accent": "Maroon",
+      "chrome_accent": "#e64553",
+      "passed": true,
+      "content_accent": "#e64553"
+    },
+    {
+      "flavor": "Latte",
+      "accent": "Mauve",
+      "chrome_accent": "#8839ef",
+      "passed": true,
+      "content_accent": "#8839ef"
+    },
+    {
+      "flavor": "Latte",
+      "accent": "Peach",
+      "chrome_accent": "#fe640b",
+      "passed": true,
+      "content_accent": "#fe640b"
+    },
+    {
+      "flavor": "Latte",
+      "accent": "Pink",
+      "chrome_accent": "#ea76cb",
+      "passed": true,
+      "content_accent": "#ea76cb"
+    },
+    {
+      "flavor": "Latte",
+      "accent": "Red",
+      "chrome_accent": "#d20f39",
+      "passed": true,
+      "content_accent": "#d20f39"
+    },
+    {
+      "flavor": "Latte",
+      "accent": "Rosewater",
+      "chrome_accent": "#dc8a78",
+      "passed": true,
+      "content_accent": "#dc8a78"
+    },
+    {
+      "flavor": "Latte",
+      "accent": "Sapphire",
+      "chrome_accent": "#209fb5",
+      "passed": true,
+      "content_accent": "#209fb5"
+    },
+    {
+      "flavor": "Latte",
+      "accent": "Sky",
+      "chrome_accent": "#04a5e5",
+      "passed": true,
+      "content_accent": "#04a5e5"
+    },
+    {
+      "flavor": "Latte",
+      "accent": "Teal",
+      "chrome_accent": "#179299",
+      "passed": true,
+      "content_accent": "#179299"
+    },
+    {
+      "flavor": "Latte",
+      "accent": "Yellow",
+      "chrome_accent": "#df8e1d",
+      "passed": true,
+      "content_accent": "#df8e1d"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Blue",
+      "chrome_accent": "#8caaee",
+      "passed": true,
+      "content_accent": "#8caaee"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Flamingo",
+      "chrome_accent": "#eebebe",
+      "passed": true,
+      "content_accent": "#eebebe"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Green",
+      "chrome_accent": "#a6d189",
+      "passed": true,
+      "content_accent": "#a6d189"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Lavender",
+      "chrome_accent": "#babbf1",
+      "passed": true,
+      "content_accent": "#babbf1"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Maroon",
+      "chrome_accent": "#ea999c",
+      "passed": true,
+      "content_accent": "#ea999c"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Mauve",
+      "chrome_accent": "#ca9ee6",
+      "passed": true,
+      "content_accent": "#ca9ee6"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Peach",
+      "chrome_accent": "#ef9f76",
+      "passed": true,
+      "content_accent": "#ef9f76"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Pink",
+      "chrome_accent": "#f4b8e4",
+      "passed": true,
+      "content_accent": "#f4b8e4"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Red",
+      "chrome_accent": "#e78284",
+      "passed": true,
+      "content_accent": "#e78284"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Rosewater",
+      "chrome_accent": "#f2d5cf",
+      "passed": true,
+      "content_accent": "#f2d5cf"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Sapphire",
+      "chrome_accent": "#85c1dc",
+      "passed": true,
+      "content_accent": "#85c1dc"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Sky",
+      "chrome_accent": "#99d1db",
+      "passed": true,
+      "content_accent": "#99d1db"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Teal",
+      "chrome_accent": "#81c8be",
+      "passed": true,
+      "content_accent": "#81c8be"
+    },
+    {
+      "flavor": "Frappe",
+      "accent": "Yellow",
+      "chrome_accent": "#e5c890",
+      "passed": true,
+      "content_accent": "#e5c890"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Blue",
+      "chrome_accent": "#8aadf4",
+      "passed": true,
+      "content_accent": "#8aadf4"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Flamingo",
+      "chrome_accent": "#f0c6c6",
+      "passed": true,
+      "content_accent": "#f0c6c6"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Green",
+      "chrome_accent": "#a6da95",
+      "passed": true,
+      "content_accent": "#a6da95"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Lavender",
+      "chrome_accent": "#b7bdf8",
+      "passed": true,
+      "content_accent": "#b7bdf8"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Maroon",
+      "chrome_accent": "#ee99a0",
+      "passed": true,
+      "content_accent": "#ee99a0"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Mauve",
+      "chrome_accent": "#c6a0f6",
+      "passed": true,
+      "content_accent": "#c6a0f6"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Peach",
+      "chrome_accent": "#f5a97f",
+      "passed": true,
+      "content_accent": "#f5a97f"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Pink",
+      "chrome_accent": "#f5bde6",
+      "passed": true,
+      "content_accent": "#f5bde6"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Red",
+      "chrome_accent": "#ed8796",
+      "passed": true,
+      "content_accent": "#ed8796"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Rosewater",
+      "chrome_accent": "#f4dbd6",
+      "passed": true,
+      "content_accent": "#f4dbd6"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Sapphire",
+      "chrome_accent": "#7dc4e4",
+      "passed": true,
+      "content_accent": "#7dc4e4"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Sky",
+      "chrome_accent": "#91d7e3",
+      "passed": true,
+      "content_accent": "#91d7e3"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Teal",
+      "chrome_accent": "#8bd5ca",
+      "passed": true,
+      "content_accent": "#8bd5ca"
+    },
+    {
+      "flavor": "Macchiato",
+      "accent": "Yellow",
+      "chrome_accent": "#eed49f",
+      "passed": true,
+      "content_accent": "#eed49f"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Blue",
+      "chrome_accent": "#89b4fa",
+      "passed": true,
+      "content_accent": "#89b4fa"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Flamingo",
+      "chrome_accent": "#f2cdcd",
+      "passed": true,
+      "content_accent": "#f2cdcd"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Green",
+      "chrome_accent": "#a6e3a1",
+      "passed": true,
+      "content_accent": "#a6e3a1"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Lavender",
+      "chrome_accent": "#b4befe",
+      "passed": true,
+      "content_accent": "#b4befe"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Maroon",
+      "chrome_accent": "#eba0ac",
+      "passed": true,
+      "content_accent": "#eba0ac"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Mauve",
+      "chrome_accent": "#cba6f7",
+      "passed": true,
+      "content_accent": "#cba6f7"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Peach",
+      "chrome_accent": "#fab387",
+      "passed": true,
+      "content_accent": "#fab387"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Pink",
+      "chrome_accent": "#f5c2e7",
+      "passed": true,
+      "content_accent": "#f5c2e7"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Red",
+      "chrome_accent": "#f38ba8",
+      "passed": true,
+      "content_accent": "#f38ba8"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Rosewater",
+      "chrome_accent": "#f5e0dc",
+      "passed": true,
+      "content_accent": "#f5e0dc"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Sapphire",
+      "chrome_accent": "#74c7ec",
+      "passed": true,
+      "content_accent": "#74c7ec"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Sky",
+      "chrome_accent": "#89dceb",
+      "passed": true,
+      "content_accent": "#89dceb"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Teal",
+      "chrome_accent": "#94e2d5",
+      "passed": true,
+      "content_accent": "#94e2d5"
+    },
+    {
+      "flavor": "Mocha",
+      "accent": "Yellow",
+      "chrome_accent": "#f9e2af",
+      "passed": true,
+      "content_accent": "#f9e2af"
+    }
+  ],
+  "sine_version": "2.3.4.1c",
+  "integration": {
+    "local_install": true,
+    "controls_visible": {
+      "flavor": true,
+      "accent": true
+    },
+    "select_macchiato_teal": "#8bd5ca",
+    "unset_preferences": {
+      "light": false,
+      "color": "#cba6f7"
+    },
+    "disabled_restores_color": "rgb(2, 41, 84)"
+  }
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "type": "dropdown",
+    "property": "catppuccin.sine.flavor",
+    "label": "Flavor",
+    "defaultValue": "auto",
+    "placeholder": false,
+    "options": [
+      {
+        "label": "Automatic (Latte / Mocha)",
+        "value": "auto"
+      },
+      {
+        "label": "Latte",
+        "value": "latte"
+      },
+      {
+        "label": "Frapp\u00e9",
+        "value": "frappe"
+      },
+      {
+        "label": "Macchiato",
+        "value": "macchiato"
+      },
+      {
+        "label": "Mocha",
+        "value": "mocha"
+      }
+    ]
+  },
+  {
+    "type": "dropdown",
+    "property": "catppuccin.sine.accent",
+    "label": "Accent",
+    "defaultValue": "mauve",
+    "placeholder": false,
+    "options": [
+      {
+        "label": "Blue",
+        "value": "blue"
+      },
+      {
+        "label": "Flamingo",
+        "value": "flamingo"
+      },
+      {
+        "label": "Green",
+        "value": "green"
+      },
+      {
+        "label": "Lavender",
+        "value": "lavender"
+      },
+      {
+        "label": "Maroon",
+        "value": "maroon"
+      },
+      {
+        "label": "Mauve",
+        "value": "mauve"
+      },
+      {
+        "label": "Peach",
+        "value": "peach"
+      },
+      {
+        "label": "Pink",
+        "value": "pink"
+      },
+      {
+        "label": "Red",
+        "value": "red"
+      },
+      {
+        "label": "Rosewater",
+        "value": "rosewater"
+      },
+      {
+        "label": "Sapphire",
+        "value": "sapphire"
+      },
+      {
+        "label": "Sky",
+        "value": "sky"
+      },
+      {
+        "label": "Teal",
+        "value": "teal"
+      },
+      {
+        "label": "Yellow",
+        "value": "yellow"
+      }
+    ]
+  }
+]
