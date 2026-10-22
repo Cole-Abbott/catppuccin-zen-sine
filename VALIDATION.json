@@ -836,6 +836,12 @@
         "icons_preserved": true,
         "navigation_states_preserved": true
       }
-    ]
+    ],
+    "installation": "Published 1.0.1 installed through native Sine update, with no extra test stylesheets",
+    "native_update": {
+      "changed": true,
+      "modHasJS": false,
+      "id": "catppuccin-zen-sine"
+    }
   }
 }

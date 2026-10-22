@@ -39,7 +39,11 @@ The unmodified upstream theme files are frozen in `vendor/themes/`, with SHA-256
 
 ## Version 1.0.1
 
-Fixes missing Sine action icons, permanently highlighted settings navigation, mismatched search/page backgrounds, and update-icon contrast. Use Sine’s update control, then reload Settings.
+Fixes missing Sine action icons, permanently highlighted settings navigation, mismatched search/page backgrounds, and update-icon contrast. Use Sine’s update control, then reload Settings. The native upgrade from 1.0.0 to 1.0.1 was verified from this public repository.
+
+![Mocha settings after the fix](docs/settings-mocha.png)
+
+[Latte settings preview](docs/settings-latte.png)
 
 ## Validation
 
